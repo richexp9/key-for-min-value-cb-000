@@ -12,11 +12,11 @@ def key_for_min_value(name_hash)
     name_hash.each { |key, valueNumber|
       if smallest == nil || valueNumber < smallest
         smallest = valueNumber
-        value = key
+        minvalue = key
       end
     }
   end
-  value
+  minvalue
 end
 
 key_for_min_value(hash)
