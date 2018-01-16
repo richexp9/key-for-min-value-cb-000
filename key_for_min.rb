@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
     return nil
   else
     name_hash.each { |key, valueNumber|
-      if valueNumber < smallest
+      if smallest == nil || valueNumber < smallest
         smallest = valueNumber
         value = key
       end
